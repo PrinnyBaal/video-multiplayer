@@ -1,0 +1,328 @@
+.hoverFlow {
+  overflow: hidden;
+}
+
+.hoverflow:hover {
+  overflow: auto;
+}
+
+#themeHeader {
+  display: flex;
+  width: 100%;
+  background-color: #28A366;
+  height: 15vh;
+  align-items: center;
+  overflow: hidden;
+}
+#themeHeader #logo {
+  width: 16vh;
+  height: 16vh;
+  background-size: 100% 100%;
+  background-image: url("../images/siteLogo.png");
+  margin-left: 3vh;
+}
+#themeHeader #logo:hover {
+  cursor: pointer;
+  background-image: url("../images/logoHover.png");
+}
+#themeHeader #infoIcon {
+  height: 7vh;
+  width: 7vh;
+  margin-right: 3vh;
+  background-size: 100% 100%;
+  background-image: url("../images/infoIcon.png");
+  background-color: Transparent;
+  outline: none;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#themeHeader #infoIcon:active {
+  background-size: 80% 80%;
+}
+#themeHeader #languageSelector {
+  height: 7vh;
+  width: 7vh;
+  margin-right: 3vh;
+  background-size: 100% 100%;
+  background-image: url("../images/languageIcon.png");
+  background-color: Transparent;
+  outline: none;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#themeHeader #languageSelector:active {
+  background-size: 80% 80%;
+}
+
+#searchBar {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  background-color: #0A100D;
+  height: 15vh;
+  justify-content: space-evenly;
+  overflow: visible;
+  color: #C9D6CF;
+}
+#searchBar #maxPlayerGroup {
+  width: 17%;
+  padding-right: 10%;
+}
+#searchBar #timeGroup {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10%;
+}
+#searchBar #timeGroup .bootstrap-datetimepicker-widget {
+  width: 100% !important;
+}
+#searchBar #timeGroup #startDateInput {
+  height: 100%;
+}
+#searchBar #timeGroup #endDateInput {
+  height: 100%;
+}
+#searchBar #locationGroup {
+  width: 21%;
+  padding-left: 10%;
+}
+#searchBar #locationGroup #locationSelector {
+  height: 10vh;
+}
+#searchBar #sourceGroup {
+  padding-left: 10%;
+  width: 21%;
+}
+#searchBar #sourceGroup #sourceSelector {
+  height: 10vh;
+}
+#searchBar #searchButton {
+  border-radius: 15%;
+  width: 16%;
+  height: 60%;
+  background-color: #28A366;
+  color: #0A100D;
+}
+
+#displayBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #C9D6CF;
+  min-height: 60vh;
+  max-height: 85vh;
+  overflow: auto;
+  padding-top: 5%;
+}
+#displayBox #introExplainer {
+  margin-left: 15%;
+}
+#displayBox #introExplainer .tutorialRow {
+  display: flex;
+  border: 2px solid black;
+  height: 15vh;
+  width: 70%;
+}
+#displayBox #introExplainer .tutorialRow .tutorialImage {
+  height: 100%;
+  border: 2px solid black;
+  width: 15vh;
+}
+#displayBox #introExplainer .tutorialRow .longTutorialImage {
+  height: 100%;
+  border: 2px solid black;
+  width: auto;
+}
+#displayBox #introExplainer .tutorialRow .tutorialExplanation {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#playerControl {
+  display: flex;
+  width: 100%;
+  background-color: #0A100D;
+  height: 15vh;
+  align-items: center;
+  justify-content: space-evenly;
+  /* CUSTOM RADIO & CHECKBOXES
+     http://stackoverflow.com/a/17541916/383904 */
+  /* HIDE RADIO */
+  /* IMAGE STYLES */
+  /* CHECKED STYLES */
+}
+#playerControl #playButton {
+  background-size: 100% 100%;
+  background-image: url("../images/playButton.png");
+  background-color: Transparent;
+  outline: none;
+  height: 10vh;
+  width: 10vh;
+  border: none;
+  background-repeat: no-repeat;
+}
+#playerControl #playButton:active {
+  background-size: 80% 80%;
+}
+#playerControl #pauseButton {
+  background-size: 100% 100%;
+  background-image: url("../images/pauseButton.png");
+  background-color: Transparent;
+  outline: none;
+  height: 10vh;
+  width: 10vh;
+  border: none;
+  background-repeat: no-repeat;
+}
+#playerControl #pauseButton:active {
+  background-size: 80% 80%;
+}
+#playerControl #linkShare {
+  height: 25%;
+  border-radius: 5%;
+}
+#playerControl [type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#playerControl .displayIcon {
+  cursor: pointer;
+  background-color: #C9D6CF;
+  border-radius: 5%;
+  border: 2px double black;
+}
+#playerControl [type=radio]:checked + img {
+  background-color: #28A366;
+}
+#playerControl #displayChoice1 {
+  content: url("../images/oneScreenDisplay.png");
+}
+#playerControl #displayChoice2 {
+  content: url("../images/twoScreenDisplay.png");
+}
+#playerControl #displayChoice3 {
+  content: url("../images/threeScreenDisplay.png");
+}
+#playerControl #displayChoice4 {
+  content: url("../images/fourScreenDisplay.png");
+}
+#playerControl #displayChoice5 {
+  content: url("../images/fiveScreenDisplay.png");
+}
+#playerControl #displayChoice6 {
+  content: url("../images/sixScreenDisplay.png");
+}
+
+.customButton {
+  background-size: 100% 100%;
+  cursor: pointer;
+  border: none;
+}
+
+.videoResult {
+  position: relative;
+  background-color: grey;
+  background-image: url("../images/pixelStatic.png");
+  background-size: 100% 100%;
+  display: table;
+}
+.videoResult .videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 15px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-image: url("../images/playerBorder.png") 40% stretch;
+  pointer-events: none;
+}
+.videoResult .videoOverlay .arrangementBar {
+  position: absolute;
+  width: 10%;
+  top: 33%;
+  right: 0;
+  height: 33%;
+  pointer-events: all;
+  opacity: 0;
+  background-color: red;
+}
+.videoResult .videoOverlay .arrangementBar:hover {
+  opacity: 1;
+}
+
+body {
+  background-image: url("https://res.cloudinary.com/metaverse/image/upload/v1533578530/Backgrounds/ep_naturalblack.png");
+  font-family: "Verdana";
+}
+body button:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed !important;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+}
+
+#alertBanner {
+  height: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  transition: height 2s;
+  overflow: hidden;
+}
+
+.activeAlert {
+  height: 5vh !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.closableDiv {
+  position: relative;
+}
+
+.closeButton {
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: grey;
+  background-image: url("https://res.cloudinary.com/metaverse/image/upload/v1548289539/icons8-delete-48.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  transition: opacity 0.5s;
+  z-index: 5;
+}
+
+.closableDiv:hover .closeButton {
+  opacity: 1;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=sample.css.map */
