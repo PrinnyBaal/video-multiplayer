@@ -34,7 +34,7 @@
 
 
 
-const siteURL="localhost:8000/";
+const siteURL="prinnybaal.github.io/video-multiplayer/";
 const databaseUpperBound=2500;
 let videoPlayers=[];
 let userPrefs={
